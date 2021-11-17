@@ -1,0 +1,126 @@
+/* comment system in php*/
+
+*{
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to bottom, blue 0% , blueviolet 100%) ;
+    
+    
+    
+}
+
+.wrapper{
+    padding: 20px;
+    background-color: cornflowerblue;
+    box-shadow: 0 5px 10px white;
+    width: 600px;
+    min-height: 400px;
+    margin: 20px 0;
+    
+}
+.wrapper .form .input-group lable{
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+    color: snow;
+    
+}
+.wrapper .form .input-group{
+  width: 100%;
+  height: 50px;
+margin-bottom: 50px;
+}
+
+.wrapper .form .input-group input ,.wrapper .form .input-group textarea{
+   width: 100%;
+   height: 100%;
+   border: 3px solid purple; 
+   outline: none;
+   padding: 5px 10px;
+}
+.wrapper .form .row .input-group:first-child{
+padding-left: 0;
+
+}
+
+.wrapper .form .row .input-group:last-child{
+    padding: 0 10px;
+   
+    padding-right: 0;
+}
+
+.wrapper .form .input-group.textarea textarea{
+    resize: none;
+    height: 200px;
+}
+
+.wrapper .form .row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px , 1fr));
+}
+
+.wrapper .prev-comments .single-item{
+    background-color: snow;
+    box-shadow: 0  5px 10px grey;
+    padding: 10px 20px ;
+    margin: 0;
+    text-align: left;
+   margin: 20px;
+    
+}
+/*.wrapper .prev-comments{
+    
+}*/
+.wrapper .prev-comments .single-item h3{
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: black;
+}
+
+.wrapper .prev-comments .single-item a{
+    margin: 0 0;
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.wrapper .prev-comments .single-item p{
+    font-size: .9rem;
+    color: black;
+
+}
+
+.wrapper .form .input-group .btn{
+   margin-top: 20px;
+    display: block;
+    padding: .7rem 2rem;
+    color: white;
+    background-color: blueviolet;
+    border: none;
+    outline: none;
+    font-weight: 800;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s ease-in;
+    box-shadow: 0 5px 10px white;
+}
+
+.wrapper .form .input-group .btn:hover{
+    color: white;
+    background-color: blue;
+    
+}
+
